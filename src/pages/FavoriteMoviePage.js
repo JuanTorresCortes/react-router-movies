@@ -5,10 +5,10 @@ import { useOutletContext } from "react-router-dom";
 const FavoriteMoviePage = () => {
   // Access the favoriteMovie data from the outlet context
   const { favoriteMovie } = useOutletContext();
-
-  // Convert favoriteMovie object to an array
+  //const {favoriteMovieArray} = favoriteMovie
+  //Convert favoriteMovie object to an array
   const favoriteMovieArray = Object.values(favoriteMovie);
-
+  
   return (
     <div className="fav-movie-pg">
       <h1>Favorite Movie List</h1>

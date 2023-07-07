@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# Movie Catalog App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Movie Catalog App built using React and React Router. It allows users to browse a collection of movies, add movies to their favorites list, edit movie details, delete movies, and create new movies.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- View a list of movies on the home page
+- Click on a movie to view its details
+- Add movies to your favorites list
+- Edit movie details
+- Delete movies
+- Create new movies
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+https://github.com/JuanTorresCortes/react-router-movies.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the project directory:
 
-### `npm test`
+3. Install the dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Start the development server:
 
-### `npm run build`
+5. Open the app in your browser at [http://localhost:3000](http://localhost:3000).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Folder Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project follows a standard React folder structure:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+├── public
+│ ├── index.html
+│ └── ...
+└── src
+├── components
+│ ├── HomeComponent.js
+│ ├── MovieCard.js
+│ ├── MovieDetailsPage.js
+│ ├── FavoriteMoviePage.js
+│ ├── CreateMoviePage.js
+│ ├── EditMovieComponent.js
+│ ├── NavBar.js
+│ ├── SideBar.js
+│ └── ...
+├── data
+│ └── movies.js
+├── App.js
+├── index.js
+└── ...
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- The `public` folder contains the static HTML file and other assets.
+- The `src` folder contains the application source code.
+- The `components` folder contains reusable React components used in the app.
+- The `data` folder contains the movie data.
+- The `App.js` file is the root component of the application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app uses the following dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React
+- React Router
+- react-router-dom
+- uuid
 
-## Learn More
+You can find the complete list of dependencies in the `package.json` file.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Creating New Movies
 
-### Code Splitting
+To create a new movie and add it to the app:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Navigate to the "Add Movie" page by clicking on the "Add movie" link in the navigation bar.
+2. Fill in the details of the new movie in the input fields provided.
+3. Click the "Submit" button to add the movie to the movie catalog.
+4. The new movie will be added to the list of movies and can be viewed on the home page.
 
-### Analyzing the Bundle Size
+### Viewing Movie Details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To view the details of a movie:
 
-### Making a Progressive Web App
+1. On the home page, browse the list of movies.
+2. Click on a movie card to view its details.
+3. You will be redirected to the movie details page where you can see the movie's title, year, director, genre, rating, runtime, actors, plot, and image.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Adding Movies to Favorites
 
-### Advanced Configuration
+To add a movie to your favorites list:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. On the movie details page, click the "Add To Favorites List" button.
+2. The movie will be added to your favorites list.
+3. You can view your favorites list by clicking on the "Favorite Movies" link in the navigation bar.
 
-### Deployment
+### Editing Movie Details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To edit the details of a movie:
 
-### `npm run build` fails to minify
+1. On the movie details page, click the "Edit Movie" button.
+2. You will be redirected to the edit movie page.
+3. Modify the details of the movie in the input fields provided.
+4. Click the "Submit" button to save the changes.
+5. The movie details will be updated and reflected on the home page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Deleting Movies
+
+To delete a movie:
+
+1. On the movie details page, click the "Delete Movie" button.
+2. The movie will be permanently removed from the movie catalog.
+3. You will be redirected to the home page.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or want to enhance the app, feel free to submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
